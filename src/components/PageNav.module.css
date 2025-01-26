@@ -1,0 +1,14 @@
+.nav {
+  background-color: orangered;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav :global(.active) {
+  /* This creates a global css class, even inside a module. This is useful when classes are provided from external sources, like the active class from NavLink*/
+  background-color: green;
+}
